@@ -8,8 +8,8 @@ function SinglePostPage({ post }) {
   return (
     <>
       <Head>
-        <title>{props.post.title}</title>
-        <meta name="description" content={props.post.excerpt} />
+        <title>{post.title}</title>
+        <meta name='description' content={post.excerpt} />
       </Head>
       <PostContent post={post} />
     </>
