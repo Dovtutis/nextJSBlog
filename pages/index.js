@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import { getFeaturedPosts } from "../lib/posts-util";
 
@@ -8,6 +9,13 @@ import FeaturedPosts from "../components/home-page/FeaturedPosts";
 function HomePage({ posts }) {
   return (
     <>
+      <Head>
+        <title>Welcome to my blog!</title>
+        <meta
+          name='description'
+          content='I post about programming and web development'
+        />
+      </Head>
       <Hero />
       <FeaturedPosts posts={posts} />
     </>
