@@ -3,8 +3,8 @@ import Head from "next/head";
 
 import { getFeaturedPosts } from "../lib/posts-util";
 
-import Hero from "../components/home-page/hero";
-import FeaturedPosts from "../components/home-page/FeaturedPosts";
+import Hero from "../components/homePage/hero";
+import FeaturedPost from "../components/homePage/FeaturedPosts";
 
 function HomePage({ posts }) {
   return (
