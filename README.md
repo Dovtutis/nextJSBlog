@@ -14,9 +14,9 @@ Key features/technologies used in project:
 
 1. React
 2. Next JS
-3. Static and server side generartion
+3. Static and server side generation
 4. Images rendered with next/image
-5. Markdown usage wtih react-markdown and gray-matter packages for blog posts
+5. Markdown usage with react-markdown and gray-matter packages for blog posts
 6. Node JS file system
 7. API routes
 8. Prism react renderer
