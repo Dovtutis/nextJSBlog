@@ -4,7 +4,7 @@ import Head from "next/head";
 import { getFeaturedPosts } from "../lib/posts-util";
 
 import Hero from "../components/homePage/Hero";
-import FeaturedPost from "../components/homePage/FeaturedPosts";
+import FeaturedPosts from "../components/homePage/FeaturedPosts";
 
 function HomePage({ posts }) {
   return (
