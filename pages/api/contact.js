@@ -23,10 +23,10 @@ async function handler(req, res) {
 
     let client;
 
+    const connectionSring = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.i7sxy.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
+
     try {
-      client = await MongoClient.connect(
-        "mongodb+srv://Dovtutis:memoriam@cluster0.i7sxy.mongodb.net/blog-project?retryWrites=true&w=majority"
-      );
+      client = await MongoClient.connect(connectionSring);
     } catch (error) {
       res
         .status(500)
